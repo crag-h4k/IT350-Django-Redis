@@ -4,19 +4,16 @@
 {% page_url 'shop-watch-list' as shop_watch_list_url %}{% if not shop_watch_list_url %}{% url "shop-watch-list" as shop_watch_list_url %}{% endif %}
 
 {% block navbar %}
-	<!--
 	<div class="navbar-extra-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-3">
-					<a href="/">
-						<img class="brand-logo" src="{% static 'shop/django-shop-logo.svg' %}" alt="django-SHOP" height="40" />
-					</a>
+					
 				</div>
 				<div class="col-xs-12 col-sm-9">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="tel:+12345678900"><i class="fa fa-phone"></i>&nbsp;+1-234-567-8900</a></li>
-						<li><a href="mailto:info@example.com"><i class="fa fa-envelope-o"></i>&nbsp;info@example.com</a></li>
+						<li><a href="mailto:email@email.com"><i class="fa fa-envelope-o"></i>&nbsp;info@example.com</a></li>
 						{% with dropdown_extra_class="expanded-nav" %}
 						{% language_chooser "shop/navbar/language-chooser.html" %}
 						{% include "shop/navbar/login-logout.html" %}
